@@ -199,4 +199,9 @@ a:active {
   background: #eba904;
 }
 
+/* Media querie */
+.slick-dots li.slick-active button:before {
+  color: #eba904;
+}
+
 /*# sourceMappingURL=main.css.map */

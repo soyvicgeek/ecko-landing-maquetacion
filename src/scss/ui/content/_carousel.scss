@@ -1,0 +1,6 @@
+@import "../../base/variables";
+@import "../../base/mixins";
+
+.slick-dots li.slick-active button:before {
+  color: $primary-color;
+}
