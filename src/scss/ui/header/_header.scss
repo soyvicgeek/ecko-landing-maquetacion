@@ -1,0 +1,79 @@
+@import "../../base/variables";
+@import "../../base/mixins";
+
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: white;
+  background-color: $primary-color;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__nav-link {
+    padding: 10px;
+    color: $black;
+    font-size: 0.9rem;
+    &:hover {
+      color: $primary-color;
+    }
+    @include desktop {
+      padding: 5px;
+      font-size: 0.8rem;
+    }
+  }
+
+  .header__logo-img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    min-width: 250px;
+    width: 320px;
+
+    @include desktop {
+      width: 150px;
+      margin-left: 72px;
+    }
+  }
+
+  .header__items {
+    display: flex;
+    align-items: center;
+
+    @include desktop {
+      margin-right: 72px;
+    }
+
+    .header__items-icons {
+      width: 26px;
+      cursor: pointer;
+    }
+  }
+}
+
+.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 42px;
+  padding-bottom: 32px;
+  border-top: 0.1rem solid #eae8e8;
+  .main-logo__img {
+    width: 120px;
+    max-width: 250px;
+    @include desktop {
+      width: 100px;
+      max-width: 150px;
+    }
+  }
+}
