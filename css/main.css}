@@ -138,6 +138,7 @@ a:active {
 /* Media querie */
 .recipes {
   width: 90%;
+  height: 100vh;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -147,7 +148,6 @@ a:active {
 @media (min-width: 768px) {
   .recipes {
     flex-direction: row;
-    align-items: center;
   }
 }
 .recipes .recipes__picture {
@@ -156,11 +156,6 @@ a:active {
 .recipes .recipes__picture .recipes__picture-img {
   display: block;
   width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.recipes .recipes__content {
-  flex-basis: 50%;
 }
 .recipes .recipes__content .recipes__content-title {
   align-items: center;
@@ -186,9 +181,6 @@ a:active {
   font-weight: 500;
   color: #000000;
 }
-.recipes .recipes__content .recipes__content-link:hover {
-  color: #eba904;
-}
 .recipes .recipes__content .recipes__content-link::after {
   content: "";
   position: absolute;
@@ -199,4 +191,4 @@ a:active {
   background: #eba904;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css%7D.map */
