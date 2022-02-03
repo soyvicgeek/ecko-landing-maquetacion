@@ -295,9 +295,21 @@ a:active {
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .information {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 .information .information__accordion {
   width: 100%;
+}
+@media (min-width: 768px) {
+  .information .information__accordion {
+    max-width: 40%;
+  }
 }
 .information .information__accordion .information__accordion-wrapper .information__accordion-header {
   width: 100%;
@@ -355,6 +367,41 @@ a:active {
   font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.2;
+}
+.information .information__character {
+  margin: 1rem;
+}
+@media (min-width: 768px) {
+  .information .information__character {
+    margin-left: 5rem;
+  }
+}
+.information .information__character .information__character-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.information .information__character .information__character-body {
+  display: flex;
+  align-items: center;
+}
+.information .information__character .information__character-body .information__character-body_img {
+  width: 60%;
+}
+.information .information__character .information__character-body .information__character-body_information {
+  margin-left: 0.8rem;
+}
+.information .information__character .information__character-body .information__character-body_information .information__character-body_information-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.information .information__character .information__character-body .information__character-body_information .information__character-body_information-paragraphs {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
