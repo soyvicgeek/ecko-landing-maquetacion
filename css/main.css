@@ -384,6 +384,12 @@ a:active {
 .information .information__character .information__character-body {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .information .information__character .information__character-body {
+    flex-direction: row;
+  }
 }
 .information .information__character .information__character-body .information__character-body_img {
   width: 60%;

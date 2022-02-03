@@ -105,6 +105,10 @@
     .information__character-body {
       display: flex;
       align-items: center;
+      flex-direction: column;
+      @include desktop {
+        flex-direction: row;
+      }
 
       .information__character-body_img {
         width: 60%;
