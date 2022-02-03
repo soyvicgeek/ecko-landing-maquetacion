@@ -16,4 +16,12 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $(".information__accordion-header").click(function () {
+    if (!$(".information__accordion-header").hasClass("active")) {
+      $(this).addClass("active");
+    } else {
+      $(this).removeClass("active");
+    }
+  });
 });
